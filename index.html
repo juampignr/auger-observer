@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com;">
+    <title>Lidar Run Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/globals.min.css">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container has-text-centered">
+        
+        <h1 class="title" style="color: #ffffff">Runner's Log</h1>
+
+        <div class="grid is-col-min-12 gap-2 has-text-left">
+          <div class="cell">
+            <div class="field">
+              <label class="label">Runner's names</label>
+              <div class="control">
+                <input id="runnersNames" class="input is-hovered is-medium" type="text" placeholder="Type all the names here">
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="field">
+              <label class="label">Date</label>
+              <div class="control">
+                <input id="logDate" class="input is-hovered is-medium" type="date">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section" style="padding:0 !important">
+          <h1 class="title">Loma Amarilla</h1>
+          <hr/>
+
+          <div class="grid is-col-min-12 gap-2 has-text-left">
+            <div class="cell">
+              <div class="field">
+                <label class="label">Started/On</label>
+                <div class="control">
+                  <input id="lomaStart" class="input is-hovered is-medium lomaAmarilla" type="time" step="1">
+                </div>
+              </div>
+            </div>
+  
+            <div class="cell">
+              <div class="field">
+                <label class="label">Stopped/Off</label>
+                <div class="control">
+                  <input id="lomaStop" class="input is-hovered is-medium lomaAmarilla" type="time" step="1">
+                </div>
+              </div>
+          </div>
+        </section>
+        
+        <section class="section" style="padding:0 !important">
+          <h1 class="title">Coihueco</h1>
+          <hr/>
+          <div class="grid is-col-min-12 gap-2 has-text-left">
+            <div class="cell">
+              <div class="field">
+                <label class="label">Started/On</label>
+                <div class="control">
+                  <input id="coihuecoStart" class="input is-hovered is-medium coihueco" type="time" step="1">
+                </div>
+              </div>
+            </div>
+  
+            <div class="cell">
+              <div class="field">
+                <label class="label">Stopped/Off</label>
+                <div class="control">
+                  <input id="coihuecoStop" class="input is-hovered is-medium coihueco" type="time" step="1">
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding:0 !important">
+          <h1 class="title">Summary</h1>
+          <hr/>
+          <div class="grid is-col-min-12 gap-2 has-text-left">
+            <div class="cell">
+              <div class="field">
+                <label class="label">Hardware</label>
+                <div class="control">
+                  <textarea
+                    id="hardwareIssues"
+                    class="textarea is-hovered"
+                    placeholder="Hardware issues"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+  
+            <div class="cell">
+              <div class="field">
+                <label class="label">Software</label>
+                <div class="control">
+                  <textarea
+                    id="softwareIssues"
+                    class="textarea is-hovered"
+                    placeholder="Software issues"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="field">
+                <label class="label">Data</label>
+                <div class="control">
+                  <textarea
+                    id="dataIssues"
+                    class="textarea is-hovered"
+                    placeholder="Data issues"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="field">
+                <label class="label">Weather</label>
+                <div class="control">
+                  <textarea
+                    id="weatherIssues"
+                    class="textarea is-hovered"
+                    placeholder="Weather issues"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+	</div>
+
+	<div class="fixed-grid has-1-cols">
+        <div class="grid">
+            <div class="cell is-full">
+              <div class="field">
+                <label class="label">Detailed Comments</label>
+                <div class="control">
+                  <textarea
+                    id="detailedComments"
+                    class="textarea is-hovered"
+                    placeholder="As the run progresses, fill in the specific details of the operation below"
+                  ></textarea>
+                </div>
+              </div>
+        </div>
+	</div>
+        </section>
+
+        <section class="section" style="padding:0 !important">
+          <button id="save" class="button is-medium is-dark">Save</button>
+          <button id="clear" class="button is-medium is-ghost">Clear</button>
+        </section>
+      </div>
+    </section>
+
+  <script src="./scripts/renderer.js"></script>
+  </body>
+
+</html>

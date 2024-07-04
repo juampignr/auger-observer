@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?><?xml-stylesheet type="text/xsl" href="runlog.xsl"?>
+    <runlog>
+  <date>Mon Jun 24 2024</date>
+  <runners>Juampi Behler</runners>
+  <operations>
+    <site>
+      <name>Loma Amarilla</name>
+      <turnOn>18:00:00</turnOn>
+      <turnOff>19:05:00</turnOff>
+    </site>
+    <site>
+      <name>Coihueco</name>
+      <turnOn/>
+      <turnOff/>
+    </site>
+  </operations>
+  <summary>
+    <hardware/>
+    <software/>
+    <data/>
+    <weather/>
+  </summary>
+  <comments/>
+</runlog>

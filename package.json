@@ -1,0 +1,26 @@
+{
+  "name": "observer",
+  "version": "0.0.1",
+  "description": "Modernized LIDAR Run Log",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --load-path=node_modules --style compressed styles/globals.scss styles/globals.min.css && electron ."
+  },
+  "keywords": [
+    "fde",
+    "lidar",
+    "auger"
+  ],
+  "author": "JPBehler,Jorge Rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.1"
+  },
+  "dependencies": {
+    "bulma": "^1.0.1",
+    "sass": "^1.77.6",
+    "xml": "^1.0.1",
+    "xml-js": "^1.6.11"
+  }
+}

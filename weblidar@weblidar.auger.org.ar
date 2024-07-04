@@ -1,0 +1,23 @@
+<runlog>
+  <date>Wed Jun 19 2024</date>
+  <runners>Jorge Rodriguez, Juan Pablo Behler</runners>
+  <operations>
+    <site>
+      <name>Loma Amarilla</name>
+      <turnOn>23:15:33</turnOn>
+      <turnOff>05:50:00</turnOff>
+    </site>
+    <site>
+      <name>Coihueco</name>
+      <turnOn/>
+      <turnOff/>
+    </site>
+  </operations>
+  <summary>
+    <hardware>CO power cut</hardware>
+    <software/>
+    <data/>
+    <weather>Windy night</weather>
+  </summary>
+  <comments/>
+</runlog>

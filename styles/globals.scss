@@ -1,0 +1,69 @@
+
+$primary: #434343;
+$secondary: hsl(184deg 9.1% 36.22%);
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $text: #000000,
+  $label-color: $secondary,
+  $title-color: $primary,
+  $subtitle-color: $secondary,
+  $radius: 15px, 
+  $family-primary: '"Space Mono", monospace',
+  $primary: $primary,
+  $control-border-width: 2px,
+  $input-shadow: none
+);
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+    min-height: 100vh !important;
+    background: radial-gradient(circle at top, #69e946da, #c1e7b6, #ffffff) !important;
+    font-weight: 400 !important;
+}
+
+h1 {
+    text-align: center;
+    color: #404d3c;
+}
+
+p {
+    color: $primary !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    text-align: left;
+    color: #404d3c;
+}
+
+.box {
+    text-align: center !important;
+}
+
+.button.is-danger > h1,
+.button.is-danger > h2,
+.button.is-danger > h3,
+.button.is-danger > a,
+.button.is-danger > p {
+    border-color: $primary;
+    color: #d74c4c;
+}
+
+.is-danger {
+    border-color: $primary;
+    color: #d74c4c;
+}
+
+.is-success.input {
+    border-color: #3adf95;
+}
+
+.fade {
+    animation: fadeIn;
+    animation-duration: .75s;
+}
+
+.bounce {
+    animation: bounce;
+    animation-duration: .75s;
+}
